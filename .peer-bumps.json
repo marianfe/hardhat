@@ -6,5 +6,16 @@
     "v-next/hardhat/templates",
     "v-next/config"
   ],
-  "bumps": []
+  "bumps": [
+    {
+      "package": "@nomicfoundation/hardhat-verify",
+      "peer": "hardhat",
+      "reason": "Uses the new api to detect errors in SolidityBuildSystem#getCompilationJobs"
+    },
+    {
+      "package": "@nomicfoundation/hardhat-typechain",
+      "peer": "hardhat",
+      "reason": "Uses the new api to detect errors in SolidityBuildSystem#build"
+    }
+  ]
 }
